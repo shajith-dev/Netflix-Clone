@@ -26,21 +26,23 @@ function Row({title,fetchUrl,isLargeRow}){
     }
 
     const handleClick = (movie) =>{
-        if(trailerUrl){
-            setTrailerUrl('')
-        }else{
-            movieTrailer(movie?.title|| movie?.orginal_name || movie?.name || "")
-            .then(url =>{
-                const urlParams = new URLSearchParams(new URL(url).search)
-                setTrailerUrl(urlParams.get("v"))
-            })
-            .catch((error)=> console.log(error))
-        }
+        movieTrailer(movie?.title|| movie?.orginal_name || movie?.name || "")
+        .then(url =>{
+            const urlParams = new URLSearchParams(new URL(url).search)
+            const Url = urlParams.get("v")
+            if(Url === trailerUrl){
+                setTrailerUrl('')
+            }
+            else{
+                setTrailerUrl(Url)
+            }
+        })
+        .catch((error)=> alert('Trailer Was not Found'))
     }
 
   return(
       <div className='row'>
-        <h2>{title}</h2>
+        <p>{title}</p>
         <div className='row__posters'>
             {movies.map(movie=>(
                 <img 

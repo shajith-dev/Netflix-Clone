@@ -15,18 +15,31 @@
 
 .nav__logo{
     position:fixed;
-    left: 20px;
-    width: 80px;
+    left: 40px;
+    width: 100px;
     object-fit: contain;
+}
+
+.nav__logo:hover{
+    cursor: pointer;
 }
 
 .nav__profile{
     position: fixed;
-    right: 20px;
-    width: 30px;
+    right: 40px;
+    width: 35px;
+    border-radius: 5px;
     object-fit: contain;
 }
 
 .nav__black{
     background-color: #111;
+}
+
+.nav__profile:hover{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
 }

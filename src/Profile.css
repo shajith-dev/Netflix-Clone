@@ -1,0 +1,106 @@
+.profile{
+    height: 130px;
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+    transition: ease-in;
+}
+
+.profiles{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #111;
+}
+
+.profile:hover{
+    cursor: pointer;
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 3px solid white;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.prof{
+    color:grey;
+    font-size:17px;
+}
+
+.watch{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 35px;
+    position: relative;
+    top: 80px;
+}
+
+.manage{
+    color: grey;
+    font-size: 17px;
+    border: 1px solid grey;
+    margin-top: 80px;
+    padding: 5px 15px 5px 15px;
+    position: relative;
+    top: -100px;
+}
+
+.manage:hover{
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 400px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .profile{
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    .watch{
+        font-size: 30px;
+        margin-bottom: 15px;
+        position: relative;
+        top: 20px;
+    }
+
+    .logo{
+        height:15px;
+        margin-left: 10px;
+        margin-top: 10px;   
+    }
+
+    .profiles{
+        height: 100vh;
+    }
+
+    .manage{
+        position: relative;
+        top: -40px;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    .prof{
+        font-size: 10px;
+    }
+}

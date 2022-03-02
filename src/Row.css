@@ -1,6 +1,8 @@
 .row{
     margin-left: 20px;
     color: white;
+    font-size: 18px;
+    font-weight: 600;
 }
 .row__posters{
     display: flex;
@@ -16,20 +18,20 @@
 .row__poster{
     width: 100%;
     object-fit: contain;
-    max-height: 100px;
+    max-height: 140px;
     margin-right: 10px;
     transition: transform 450ms;
 }
 
 .row__poster:hover{
     cursor: pointer;
-    transform: scale(1.08);
+    transform: scale(1.12);
 }
 
 .row__posterLarge{
-    max-height: 250px;
+    max-height: 280px;
 }
 
 .row__posterLarge:hover{
-    transform: scale(1.09);
+    transform: scale(1.1);
 }

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './Nav.css'
+import {useNavigate} from 'react-router-dom'
+import Profile from './Profile';
 
 function Nav() {
     const [show,handleShow] = useState(false)
+    let navigate = useNavigate()
     useEffect(()=>{
         window.addEventListener("scroll",()=>{
             if(window.scrollY>100){
@@ -24,6 +27,7 @@ function Nav() {
               src="https://i.pinimg.com/originals/2b/90/0d/2b900d5612554cd0b5edf7d8e848c3ea.png"
               alt="profile"
               className='nav__profile'
+              onClick={()=>{navigate('/profiles')}}
           />
       </div>
   );

@@ -1,0 +1,104 @@
+.login {
+  background-image: url("https://img.helpnetsecurity.com/wp-content/uploads/2020/03/23143409/netflix-collection.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  background-color: rgba(17, 17, 17, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 400px;
+  color: white;
+  flex-direction: column;
+}
+
+.flex {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  width: 64%;
+  position: relative;
+  top: -50px;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 15px;
+  margin-bottom: 15px;
+  background-color: #333333;
+  border: none;
+  opacity: 100%;
+  color: white;
+  width: 60%;
+  outline: none;
+  border-radius: 2px;
+  position: relative;
+  top: -50px;
+}
+
+.btn {
+  width: 66%;
+  padding: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  margin-top: 25px;
+  position: relative;
+  top: -50px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+
+.icon {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.forgot {
+  position: relative;
+  top: -20px;
+  font-size: 15px;
+  color: grey;
+}
+
+.react {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen {
+  
+}
